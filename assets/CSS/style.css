@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Poppins:ital,wght@0,200;0,300;0,400;1,400&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gloock', serif;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.bg-blue {
+    background-color: #374057;
+}
+
+.bg-danger3 {
+    background: #D5385F;
+}
+
+.bg-danger3 {
+    color: #5C327A;
+}
+
+.bg-danger4 {
+    color: #5C327A;
+}
+
+.bg-warning2 {
+    background: #FA9005;
+}
+
+.text-danger2 {
+    color: #D5385F !important;
+}
+
+.text-success2 {
+    color: #10dd09;
+}
+
+.text-dark2 {
+    color: #161616;
+}
