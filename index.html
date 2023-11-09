@@ -18,10 +18,11 @@
                     <a class="navbar-brand" href="index.html">
                         <img src="./assets/img/momondo.png" class="img-fluid" alt="Logo" width="200px">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <i class="fa-solid fa-bars text-white"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -46,8 +47,8 @@
                         <form class="d-flex" role="search">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
                                         <img src="./assets/img/country.jpg" height="15px" width="15px"> English(GDP)
                                     </a>
                                     <ul class="dropdown-menu">
@@ -61,12 +62,198 @@
                                 </li>
                             </ul>
                         </form>
-                        
                     </div>
                 </div>
             </nav>
         </Header>
-        <!-- Header Section End -->
+        <!-- /Header Section End -->
+
+        <!-- Banner Section Start -->
+        <section class="banner position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9 col-lg-7 text-white ms-1 position-absolute top-15">
+                        <h1>
+                            "The best place to find <br> the cheapest airfares"
+                        </h1>
+                        <p class="fw-bold fs-1 mt-4">
+                            - every single time
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div
+                        class="col-11 col-sm-9 col-md-10 position-absolute bottom-0 mb-4 ms-3 ms-sm-0 py-1 bg-danger3 rounded ">
+                        <nav class="mb-2">
+                            <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                <button class="nav-link rounded-0 border-0 text-white bg-danger4 active btn-width-80"
+                                    id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+                                    role="tab" aria-controls="nav-home" aria-selected="true">
+                                    <i class="fa-solid fa-plane-departure"></i> Flights
+                                </button>
+                                <button class="nav-link rounded-0 border-0 text-white bg-danger4 mx-1 py-0 btn-width-80"
+                                    id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
+                                    role="tab" aria-controls="nav-profile" aria-selected="false">
+                                    <i class="fa-solid fa-shop"></i> Hotels
+                                </button>
+                                <button class="nav-link rounded-0 border-0 text-white bg-danger4 btn-width-80"
+                                    id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button"
+                                    role="tab" aria-controls="nav-contact" aria-selected="false">
+                                    <i class="fa-solid fa-car"></i> Cars
+                                </button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                aria-labelledby="nav-home-tab" tabindex="0">
+                                <form action="">
+                                    <div class="row g-1">
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div class="row g-1">
+                                                <div class="col-lg-11">
+                                                    <select name="Select-passenger" id="Select-passenger"
+                                                        class="form-control" aria-label="origin">
+                                                        <option selected>Enter Origin City</option>
+                                                        <option value="5 Pass">A.Nagar</option>
+                                                        <option value="3 Pass">Mumbai</option>
+                                                        <option value="1 Pass">Nashik</option>
+                                                        <option value="2 Pass">Pune</option>
+                                                        <option value="4 Pass">Delhi</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-1 ">
+                                                    <span><i class="fa-solid fa-arrow-right-arrow-left m-1 text-success"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-2">
+                                            <select name="Select-passenger" id="Select-passenger" class="form-control"
+                                                aria-label="Destination">
+                                                <option selected>Enter Destination City</option>
+                                                <option value="5 Pass">A.Nagar</option>
+                                                <option value="3 Pass">Mumbai</option>
+                                                <option value="1 Pass">Nashik</option>
+                                                <option value="2 Pass">Pune</option>
+                                                <option value="4 Pass">Delhi</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-2">
+                                            <input type="date" class="form-control" placeholder="Start Date"
+                                                aria-label="Start Date">
+                                        </div>
+                                        <div class="col-sm-6 col-lg-2">
+                                            <input type="date" class="form-control" placeholder="End Date"
+                                                aria-label="End Date">
+                                        </div>
+                                        <div class="col-sm-6 col-lg-2">
+                                            <select name="Select-passenger" id="Select-passenger" class="form-control"
+                                                aria-label="Select-passenger">
+                                                <option selected>Select Passenger</option>
+                                                <option value="1 Pass">Passenger_1</option>
+                                                <option value="2 Pass">Passenger_2</option>
+                                                <option value="3 Pass">Passenger_3</option>
+                                                <option value="4 Pass">Passenger_4</option>
+                                                <option value="5 Pass">Passenger_5</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-1 ">
+                                            <input type="button" class="form-control circle bg-danger33" value="Search"
+                                                aria-label="Search">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                                tabindex="0">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
+                                tabindex="0">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, fugit?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- /Banner Section End -->
+
+        <!-- Fun Section Start -->
+        <section class="fun bg-dark py-5 text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="row">
+                        <h2 class="text-center fw-bold mt-3 mb-4">SOME FUN WE COVER</h2>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="bg-dark py-4 px-3 my-2 text-center">
+                            <i class="fa-solid fa-person-biking icons fs-1 mb-3"></i>
+                            <p class="fw-bold">5670 M</p>
+                            <p>CYCLIING TRACK</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="bg-dark py-4 px-3 my-2 text-center">
+                            <i class="fa-solid fa-route icons fs-1 mb-3"></i>
+                            <p class="fw-bold">480 M</p>
+                            <p>DISTANCE COVERD</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="bg-dark py-4 px-3 my-2 text-center">
+                            <i class="fa-solid fa-person-hiking icons fs-1 mb-3"></i>
+                            <p class="fw-bold">5670 M</p>
+                            <p>ALTITUDE HIKED</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="bg-dark py-4 px-3 my-2 text-center">
+                            <i class="fa-solid fa-ship fs-1 mb-3"></i>
+                            <p class="fw-bold">180 M</p>
+                            <p>SAILING DISTANCE</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="bg-dark py-4 px-3 my-2 text-center">
+                            <i class="fa-solid fa-tree icons fs-1 mb-3"></i>
+                            <p class="fw-bold">570 M</p>
+                            <p>SPENT ADVENTURE</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="bg-dark py-4 px-3 my-2 text-center">
+                            <i class="fa-solid fa-chess-knight fs-1 mb-3"></i>
+                            <p class="fw-bold">567 M</p>
+                            <p>JUGLE DISTANCE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Fun Section End -->
+
+        <!-- NewsLetter Section Start -->
+        <div class="newsletter py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-8 text-center text-white">
+                        <h3 class="fw-bold mt-5">SUBSCRIBE FOR OUR TRAVEL NEWSLETTERS</h3>
+                        <p class="mt-5 mx-md-5 px-md-5">
+                            Join our community of over 300,000 global readers who receive emails filled with
+                            news,promotions,and other good stuff from G Adventures.
+                        </p>
+                        <form action="" class="mt-4">
+                            <input type="email" placeholder="Enter your email Address......" class="w-50 text-white bg-transparent border">
+                            <input type="submit" value="SEARCH" class="w-25">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /NewsLetter Section End -->
+
 
 
 
