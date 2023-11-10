@@ -1,266 +1,665 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Momondo_5</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="./assets/CSS/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momondo_5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/CSS/style.css">
+</head>
 
-    <body>
-        <!-- Header Section Start -->
-        <Header>
-            <nav class="navbar navbar-expand-lg bg-blue">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="./assets/img/momondo.png" class="img-fluid" alt="Logo" width="200px">
-                    </a>
-                    <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <!-- <span class="navbar-toggler-icon"></span> -->
-                        <i class="fa-solid fa-bars text-white"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<body>
+    <!-- Header Section Start -->
+    <Header>
+        <nav class="navbar navbar-expand-lg bg-blue">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/img/momondo.png" class="img-fluid" alt="Logo" width="200px">
+                </a>
+                <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fa-solid fa-bars text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-danger2 fw-bold" aria-current="page"
+                                href="javascript:void()">Flight</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Hotel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Car Hire</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Trip Finder</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Inspirations</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" role="search">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active text-danger2 fw-bold" aria-current="page"
-                                    href="javascript:void()">Flight</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./assets/img/country.jpg" height="15px" width="15px"> English(GDP)
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">India</a></li>
+                                    <li><a class="dropdown-item" href="#">China</a></li>
+                                    <li><a class="dropdown-item" href="#">Nepal</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light" href="#">Hotel</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#">Car Hire</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#">Trip Finder</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#">Inspirations</a>
+                                <a class="nav-link text-success2" href="#">Log In</a>
                             </li>
                         </ul>
-
-                        <form class="d-flex" role="search">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle text-light" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="./assets/img/country.jpg" height="15px" width="15px"> English(GDP)
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">India</a></li>
-                                        <li><a class="dropdown-item" href="#">China</a></li>
-                                        <li><a class="dropdown-item" href="#">Nepal</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-success2" href="#">Log In</a>
-                                </li>
-                            </ul>
-                        </form>
-                    </div>
+                    </form>
                 </div>
-            </nav>
-        </Header>
-        <!-- /Header Section End -->
+            </div>
+        </nav>
+    </Header>
+    <!-- /Header Section End -->
 
-        <!-- Banner Section Start -->
-        <section class="banner position-relative">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-9 col-lg-7 text-white ms-1 position-absolute top-15">
-                        <h1>
-                            "The best place to find <br> the cheapest airfares"
-                        </h1>
-                        <p class="fw-bold fs-1 mt-4">
-                            - every single time
-                        </p>
-                    </div>
+    <!-- Break point
+        Small sm ≥576px
+        Medium md ≥768px
+        Large lg ≥992px
+        Extra large xl ≥1200px
+        Extra extra large xxl ≥1400px 
+    -->
+
+    <!-- Banner Section Start -->
+    <section class="banner position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-lg-7 text-white ms-1 position-absolute top-15">
+                    <h1>
+                        "The best place to find <br> the cheapest airfares"
+                    </h1>
+                    <p class="fw-bold fs-1 mt-4">
+                        - every single time
+                    </p>
                 </div>
-                <div class="row">
-                    <div
-                        class="col-11 col-sm-9 col-md-10 position-absolute bottom-0 mb-4 ms-3 ms-sm-0 py-1 bg-danger3 rounded ">
-                        <nav class="mb-2">
-                            <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                <button class="nav-link rounded-0 border-0 text-white bg-danger4 active btn-width-80"
-                                    id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
-                                    role="tab" aria-controls="nav-home" aria-selected="true">
-                                    <i class="fa-solid fa-plane-departure"></i> Flights
-                                </button>
-                                <button class="nav-link rounded-0 border-0 text-white bg-danger4 mx-1 py-0 btn-width-80"
-                                    id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
-                                    role="tab" aria-controls="nav-profile" aria-selected="false">
-                                    <i class="fa-solid fa-shop"></i> Hotels
-                                </button>
-                                <button class="nav-link rounded-0 border-0 text-white bg-danger4 btn-width-80"
-                                    id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button"
-                                    role="tab" aria-controls="nav-contact" aria-selected="false">
-                                    <i class="fa-solid fa-car"></i> Cars
-                                </button>
-                            </div>
-                        </nav>
-                        <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
-                                aria-labelledby="nav-home-tab" tabindex="0">
-                                <form action="">
-                                    <div class="row g-1">
-                                        <div class="col-sm-6 col-lg-3">
-                                            <div class="row g-1">
-                                                <div class="col-lg-11">
-                                                    <select name="Select-passenger" id="Select-passenger"
-                                                        class="form-control" aria-label="origin">
-                                                        <option selected>Enter Origin City</option>
-                                                        <option value="5 Pass">A.Nagar</option>
-                                                        <option value="3 Pass">Mumbai</option>
-                                                        <option value="1 Pass">Nashik</option>
-                                                        <option value="2 Pass">Pune</option>
-                                                        <option value="4 Pass">Delhi</option>
-                                                    </select>
+            </div>
+            <div class="row">
+                <div
+                    class="col-11 col-sm-9 col-md-10 position-absolute bottom-0 mb-4 ms-3 ms-sm-0 py-1 bg-danger3 rounded ">
+                    <nav class="mb-2">
+                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                            <button class="nav-link rounded-0 border-0 text-white bg-danger4 active btn-width-80"
+                                id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+                                role="tab" aria-controls="nav-home" aria-selected="true">
+                                <i class="fa-solid fa-plane-departure"></i> Flights
+                            </button>
+                            <button class="nav-link rounded-0 border-0 text-white bg-danger4 mx-1 py-0 btn-width-80"
+                                id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
+                                role="tab" aria-controls="nav-profile" aria-selected="false">
+                                <i class="fa-solid fa-shop"></i> Hotels
+                            </button>
+                            <button class="nav-link rounded-0 border-0 text-white bg-danger4 btn-width-80"
+                                id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button"
+                                role="tab" aria-controls="nav-contact" aria-selected="false">
+                                <i class="fa-solid fa-car"></i> Cars
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab" tabindex="0">
+                            <form action="">
+                                <div class="row g-1">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="row g-1">
+                                            <div class="col-lg-11">
+                                                <select name="Select-passenger" id="Select-passenger"
+                                                    class="form-control" aria-label="origin">
+                                                    <option selected>Enter Origin City</option>
+                                                    <option value="5 Pass">A.Nagar</option>
+                                                    <option value="3 Pass">Mumbai</option>
+                                                    <option value="1 Pass">Nashik</option>
+                                                    <option value="2 Pass">Pune</option>
+                                                    <option value="4 Pass">Delhi</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-1 ">
+                                                <span><i class="fa-solid fa-arrow-right-arrow-left m-1 text-success"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-2">
+                                        <select name="Select-passenger" id="Select-passenger" class="form-control"
+                                            aria-label="Destination">
+                                            <option selected>Enter Destination City</option>
+                                            <option value="5 Pass">A.Nagar</option>
+                                            <option value="3 Pass">Mumbai</option>
+                                            <option value="1 Pass">Nashik</option>
+                                            <option value="2 Pass">Pune</option>
+                                            <option value="4 Pass">Delhi</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-2">
+                                        <input type="date" class="form-control" placeholder="Start Date"
+                                            aria-label="Start Date">
+                                    </div>
+                                    <div class="col-sm-6 col-lg-2">
+                                        <input type="date" class="form-control" placeholder="End Date"
+                                            aria-label="End Date">
+                                    </div>
+                                    <div class="col-sm-6 col-lg-2">
+                                        <select name="Select-passenger" id="Select-passenger" class="form-control"
+                                            aria-label="Select-passenger">
+                                            <option selected>Select Passenger</option>
+                                            <option value="1 Pass">Passenger_1</option>
+                                            <option value="2 Pass">Passenger_2</option>
+                                            <option value="3 Pass">Passenger_3</option>
+                                            <option value="4 Pass">Passenger_4</option>
+                                            <option value="5 Pass">Passenger_5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-1 ">
+                                        <input type="button" class="form-control circle bg-danger33" value="Search"
+                                            aria-label="Search">
+                                    </div>
+                                </div>
+                                <div class="row g-1 py-1">
+                                    <div class="col-11">
+                                        <div class="row g-1 text-white">
+                                            <div class=" col-sm-6 col-xl-3">
+                                                <label for="Ticket-trip" class="form-control2">
+                                                    <i class="fa-solid fa-gear"></i> Trip-types:
+                                                </label>
+                                                <select name="Ticket-trip" id="Ticket-trip"
+                                                    class=" bg-transparent text-white form-control2"
+                                                    aria-label="Select-passenger">
+                                                    <option value="Economy" selected>Return Trip</option>
+                                                    <option value="Economy">Destination</option>
+                                                </select>
+                                            </div>
+
+                                            <div class=" col-sm-6 col-xl-3">
+                                                <label for="Ticket-class" class="form-control2">
+                                                    <i class="fa-solid fa-ticket"></i> Ticket-class:
+                                                </label>
+                                                <select name="Ticket-class" id="Ticket-class"
+                                                    class=" bg-transparent text-white form-control2"
+                                                    aria-label="Select-passenger">
+                                                    <option value="Economy" selected>Economy</option>
+                                                    <option value="Economy">Economy</option>
+                                                    <option value="Economy">Economy</option>
+                                                    <option value="Economy">Economy</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-6 col-xl-3 ">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckIndeterminate">
+                                                    <label class="form-check-label" for="flexCheckIndeterminate">
+                                                        Direct flights only
+                                                    </label>
                                                 </div>
-                                                <div class="col-lg-1 ">
-                                                    <span><i class="fa-solid fa-arrow-right-arrow-left m-1 text-success"></i></span>
+                                            </div>
+
+                                            <div class="col-sm-6 col-xl-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckIndeterminate">
+                                                    <label class="form-check-label" for="flexCheckIndeterminate">
+                                                        Include nearly airports
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6 col-lg-2">
-                                            <select name="Select-passenger" id="Select-passenger" class="form-control"
-                                                aria-label="Destination">
-                                                <option selected>Enter Destination City</option>
-                                                <option value="5 Pass">A.Nagar</option>
-                                                <option value="3 Pass">Mumbai</option>
-                                                <option value="1 Pass">Nashik</option>
-                                                <option value="2 Pass">Pune</option>
-                                                <option value="4 Pass">Delhi</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-sm-6 col-lg-2">
-                                            <input type="date" class="form-control" placeholder="Start Date"
-                                                aria-label="Start Date">
-                                        </div>
-                                        <div class="col-sm-6 col-lg-2">
-                                            <input type="date" class="form-control" placeholder="End Date"
-                                                aria-label="End Date">
-                                        </div>
-                                        <div class="col-sm-6 col-lg-2">
-                                            <select name="Select-passenger" id="Select-passenger" class="form-control"
-                                                aria-label="Select-passenger">
-                                                <option selected>Select Passenger</option>
-                                                <option value="1 Pass">Passenger_1</option>
-                                                <option value="2 Pass">Passenger_2</option>
-                                                <option value="3 Pass">Passenger_3</option>
-                                                <option value="4 Pass">Passenger_4</option>
-                                                <option value="5 Pass">Passenger_5</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-sm-6 col-lg-1 ">
-                                            <input type="button" class="form-control circle bg-danger33" value="Search"
-                                                aria-label="Search">
+                                    </div>
+                                    <div class="col-1">
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                            tabindex="0">
+                            <form action="">
+                                <div class="row g-1 py-1">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="row g-1">
+                                            <div class="col-lg-11">
+                                                <select name="Select-passenger" id="Select-passenger"
+                                                    class="form-control" aria-label="origin">
+                                                    <option selected>Enter Origin City</option>
+                                                    <option value="5 Pass">A.Nagar</option>
+                                                    <option value="3 Pass">Mumbai</option>
+                                                    <option value="1 Pass">Nashik</option>
+                                                    <option value="2 Pass">Pune</option>
+                                                    <option value="4 Pass">Delhi</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-1 ">
+                                                <span><i class="fa-solid fa-arrow-right-arrow-left m-1 text-success"></i></span>
+                                            </div>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
-                                tabindex="0">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            </div>
-                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
-                                tabindex="0">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, fugit?
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
-        <!-- /Banner Section End -->
+                                    <div class="col-sm-6 col-lg-2">
+                                        <select name="Select-passenger" id="Select-passenger" class="form-control"
+                                            aria-label="Destination">
+                                            <option selected>Enter Destination City</option>
+                                            <option value="5 Pass">A.Nagar</option>
+                                            <option value="3 Pass">Mumbai</option>
+                                            <option value="1 Pass">Nashik</option>
+                                            <option value="2 Pass">Pune</option>
+                                            <option value="4 Pass">Delhi</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-2">
+                                        <input type="date" class="form-control" placeholder="Start Date"
+                                            aria-label="Start Date">
+                                    </div>
+                                    <div class="col-sm-6 col-lg-2">
+                                        <input type="date" class="form-control" placeholder="End Date"
+                                            aria-label="End Date">
+                                    </div>
+                                    <div class="col-sm-6 col-lg-2">
+                                        <select name="Select-passenger" id="Select-passenger" class="form-control"
+                                            aria-label="Select-passenger">
+                                            <option selected>Select Passenger</option>
+                                            <option value="1 Pass">Passenger_1</option>
+                                            <option value="2 Pass">Passenger_2</option>
+                                            <option value="3 Pass">Passenger_3</option>
+                                            <option value="4 Pass">Passenger_4</option>
+                                            <option value="5 Pass">Passenger_5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-1 ">
+                                        <input type="button" class="form-control circle bg-danger33" value="Search"
+                                            aria-label="Search">
+                                    </div>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-11">
+                                        <div class="row g-1 text-white">
+                                            <div class=" col-sm-6 col-xl-3">
+                                                <label for="Ticket-trip" class="form-control2">
+                                                    <i class="fa-solid fa-gear"></i> Trip-types:
+                                                </label>
+                                                <select name="Ticket-trip" id="Ticket-trip"
+                                                    class=" bg-transparent text-white form-control2"
+                                                    aria-label="Select-passenger">
+                                                    <option value="Economy" selected>Return Trip</option>
+                                                    <option value="Economy">Destination</option>
+                                                </select>
+                                            </div>
+                                            <div class=" col-sm-6 col-xl-3">
+                                                <label for="Ticket-class" class="form-control2">
+                                                    <i class="fa-solid fa-ticket"></i> Ticket-class:
+                                                </label>
+                                                <select name="Ticket-class" id="Ticket-class"
+                                                    class=" bg-transparent text-white form-control2"
+                                                    aria-label="Select-passenger">
+                                                    <option value="Economy" selected>Economy</option>
+                                                    <option value="Economy">Economy</option>
+                                                    <option value="Economy">Economy</option>
+                                                    <option value="Economy">Economy</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-6 col-xl-3 ">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckIndeterminate">
+                                                    <label class="form-check-label" for="flexCheckIndeterminate">
+                                                        Direct flights only
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-xl-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckIndeterminate">
+                                                    <label class="form-check-label" for="flexCheckIndeterminate">
+                                                        Include nearly airports
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
 
-        <!-- Fun Section Start -->
-        <section class="fun bg-dark py-5 text-white">
-            <div class="container">
-                <div class="row">
-                    <div class="row">
-                        <h2 class="text-center fw-bold mt-3 mb-4">SOME FUN WE COVER</h2>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6">
-                        <div class="bg-dark py-4 px-3 my-2 text-center">
-                            <i class="fa-solid fa-person-biking icons fs-1 mb-3"></i>
-                            <p class="fw-bold">5670 M</p>
-                            <p>CYCLIING TRACK</p>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6">
-                        <div class="bg-dark py-4 px-3 my-2 text-center">
-                            <i class="fa-solid fa-route icons fs-1 mb-3"></i>
-                            <p class="fw-bold">480 M</p>
-                            <p>DISTANCE COVERD</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6">
-                        <div class="bg-dark py-4 px-3 my-2 text-center">
-                            <i class="fa-solid fa-person-hiking icons fs-1 mb-3"></i>
-                            <p class="fw-bold">5670 M</p>
-                            <p>ALTITUDE HIKED</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6">
-                        <div class="bg-dark py-4 px-3 my-2 text-center">
-                            <i class="fa-solid fa-ship fs-1 mb-3"></i>
-                            <p class="fw-bold">180 M</p>
-                            <p>SAILING DISTANCE</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6">
-                        <div class="bg-dark py-4 px-3 my-2 text-center">
-                            <i class="fa-solid fa-tree icons fs-1 mb-3"></i>
-                            <p class="fw-bold">570 M</p>
-                            <p>SPENT ADVENTURE</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6">
-                        <div class="bg-dark py-4 px-3 my-2 text-center">
-                            <i class="fa-solid fa-chess-knight fs-1 mb-3"></i>
-                            <p class="fw-bold">567 M</p>
-                            <p>JUGLE DISTANCE</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /Fun Section End -->
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
+                            tabindex="0">
+                            <form action="">
+                                <div class="row g-1 py-1">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="row g-1">
+                                            <div class="col-lg-11">
+                                                <select name="Select-passenger" id="Select-passenger"
+                                                    class="form-control" aria-label="origin">
+                                                    <option selected>Enter Origin City</option>
+                                                    <option value="5 Pass">A.Nagar</option>
+                                                    <option value="3 Pass">Mumbai</option>
+                                                    <option value="1 Pass">Nashik</option>
+                                                    <option value="2 Pass">Pune</option>
+                                                    <option value="4 Pass">Delhi</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-1 ">
+                                                <span><i
+                                                        class="fa-solid fa-arrow-right-arrow-left m-1 text-success"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-2">
+                                        <select name="Select-passenger" id="Select-passenger" class="form-control"
+                                            aria-label="Destination">
+                                            <option selected>Enter Destination City</option>
+                                            <option value="5 Pass">A.Nagar</option>
+                                            <option value="3 Pass">Mumbai</option>
+                                            <option value="1 Pass">Nashik</option>
+                                            <option value="2 Pass">Pune</option>
+                                            <option value="4 Pass">Delhi</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-2">
+                                        <input type="date" class="form-control" placeholder="Start Date"
+                                            aria-label="Start Date">
+                                    </div>
+                                    <div class="col-sm-6 col-lg-2">
+                                        <input type="date" class="form-control" placeholder="End Date"
+                                            aria-label="End Date">
+                                    </div>
+                                    <div class="col-sm-6 col-lg-2">
+                                        <select name="Select-passenger" id="Select-passenger" class="form-control"
+                                            aria-label="Select-passenger">
+                                            <option selected>Select Passenger</option>
+                                            <option value="1 Pass">Passenger_1</option>
+                                            <option value="2 Pass">Passenger_2</option>
+                                            <option value="3 Pass">Passenger_3</option>
+                                            <option value="4 Pass">Passenger_4</option>
+                                            <option value="5 Pass">Passenger_5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-1 ">
+                                        <input type="button" class="form-control circle bg-danger33" value="Search"
+                                            aria-label="Search">
+                                    </div>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-11">
+                                        <div class="row g-1 text-white">
+                                            <div class=" col-sm-6 col-xl-3">
+                                                <label for="Ticket-trip" class="form-control2">
+                                                    <i class="fa-solid fa-gear"></i> Trip-types:
+                                                </label>
+                                                <select name="Ticket-trip" id="Ticket-trip"
+                                                    class=" bg-transparent text-white form-control2"
+                                                    aria-label="Select-passenger">
+                                                    <option value="Economy" selected>Return Trip</option>
+                                                    <option value="Economy">Destination</option>
+                                                </select>
+                                            </div>
 
-        <!-- NewsLetter Section Start -->
-        <div class="newsletter py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4"></div>
-                    <div class="col-lg-8 text-center text-white">
-                        <h3 class="fw-bold mt-5">SUBSCRIBE FOR OUR TRAVEL NEWSLETTERS</h3>
-                        <p class="mt-5 mx-md-5 px-md-5">
-                            Join our community of over 300,000 global readers who receive emails filled with
-                            news,promotions,and other good stuff from G Adventures.
-                        </p>
-                        <form action="" class="mt-4">
-                            <input type="email" placeholder="Enter your email Address......" class="w-50 text-white bg-transparent border">
-                            <input type="submit" value="SEARCH" class="w-25">
-                        </form>
+                                            <div class=" col-sm-6 col-xl-3">
+                                                <label for="Ticket-class" class="form-control2">
+                                                    <i class="fa-solid fa-ticket"></i> Ticket-class:
+                                                </label>
+                                                <select name="Ticket-class" id="Ticket-class"
+                                                    class=" bg-transparent text-white form-control2"
+                                                    aria-label="Select-passenger">
+                                                    <option value="Economy" selected>Economy</option>
+                                                    <option value="Economy">Economy</option>
+                                                    <option value="Economy">Economy</option>
+                                                    <option value="Economy">Economy</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-6 col-xl-3 ">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckIndeterminate">
+                                                    <label class="form-check-label" for="flexCheckIndeterminate">
+                                                        Direct flights only
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-xl-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckIndeterminate">
+                                                    <label class="form-check-label" for="flexCheckIndeterminate">
+                                                        Include nearly airports
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /NewsLetter Section End -->
+    </section>
+    <!-- /Banner Section End -->
+
+    <!-- Fun Section Start -->
+    <section class="fun bg-dark py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <h2 class="text-center fw-bold mt-3 mb-4">SOME FUN WE COVER</h2>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="bg-dark py-4 px-3 my-2 text-center">
+                        <i class="fa-solid fa-person-biking icons fs-1 mb-3"></i>
+                        <p class="fw-bold">5670 M</p>
+                        <p>CYCLIING TRACK</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="bg-dark py-4 px-3 my-2 text-center">
+                        <i class="fa-solid fa-route icons fs-1 mb-3"></i>
+                        <p class="fw-bold">480 M</p>
+                        <p>DISTANCE COVERD</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="bg-dark py-4 px-3 my-2 text-center">
+                        <i class="fa-solid fa-person-hiking icons fs-1 mb-3"></i>
+                        <p class="fw-bold">5670 M</p>
+                        <p>ALTITUDE HIKED</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="bg-dark py-4 px-3 my-2 text-center">
+                        <i class="fa-solid fa-ship fs-1 mb-3"></i>
+                        <p class="fw-bold">180 M</p>
+                        <p>SAILING DISTANCE</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="bg-dark py-4 px-3 my-2 text-center">
+                        <i class="fa-solid fa-tree icons fs-1 mb-3"></i>
+                        <p class="fw-bold">570 M</p>
+                        <p>SPENT ADVENTURE</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="bg-dark py-4 px-3 my-2 text-center">
+                        <i class="fa-solid fa-chess-knight fs-1 mb-3"></i>
+                        <p class="fw-bold">567 M</p>
+                        <p>JUGLE DISTANCE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Fun Section End -->
+
+    <!-- NewsLetter Section Start -->
+    <div class="newsletter py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-8 text-center text-white">
+                    <h3 class="fw-bold mt-5">SUBSCRIBE FOR OUR TRAVEL NEWSLETTERS</h3>
+                    <p class="mt-5 mx-md-5 px-md-5">
+                        Join our community of over 300,000 global readers who receive emails filled with
+                        news,promotions,and other good stuff from G Adventures.
+                    </p>
+                    <form action="" class="mt-4">
+                        <input type="email" placeholder="Enter your email Address......"
+                            class="w-50 text-white bg-transparent border">
+                        <input type="submit" value="SEARCH" class="w-25">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /NewsLetter Section End -->
+
+    <!-- Destination Section Start -->
+    <div class="destination py-5 bg-danger5">
+        <div class="container">
+            <div class="row mb-4">
+                <h3 class="fw-bold text-center text-white">POPULAR DESTINATION</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card border-3 m-4 mx-sm-0">
+                        <img src="./assets/img/dest1.jpg" class="card-img-top" alt="dest1">
+                        <div class="card-body">
+                            <p class="fw-bold my-2">
+                                <span class="text-orange">$999</span> Rome, Florence & Venice <br>9-Night Vaction w/Air
+                            </p>
+                            <p>
+                                This is the lowest price we've seen in four year for a Night
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card border-3 m-4 mx-sm-0">
+                        <img src="./assets/img/dest2.jpg" class="card-img-top" alt="dest1">
+                        <div class="card-body">
+                            <p class="fw-bold my-2">
+                                <span class="text-orange">1699</span> Australlia:Sydney & Fill<br>Vaction w/Air,<span
+                                    class="text-orange">Save $1060</span>
+                            </p>
+                            <p>
+                                This is the lowest price we've seen in four year for a Night
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card border-3 m-4 mx-sm-0">
+                        <img src="./assets/img/dest3.jpg" class="card-img-top" alt="dest1">
+                        <div class="card-body">
+                            <p class="fw-bold my-2">
+                                <span class="text-orange">$1699</span>
+                                Greek Islands 8-Night Vaction w/Air, <span class="text-orange">Save $ 1060</span>
+                            </p>
+                            <p>
+                                This is the lowest price we've seen in four year for a Night
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card border-3 m-4 mx-sm-0">
+                        <img src="./assets/img/dest4.jpg" class="card-img-top" alt="dest1">
+                        <div class="card-body">
+                            <p class="fw-bold my-2">
+                                <span class="text-orange">$899</span>
+                                Ireland & Germany 6-Night Adventure w/Air
+                            </p>
+                            <p>
+                                This is the lowest price we've seen in four year for a Night
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card border-3 m-4 mx-sm-0">
+                        <img src="./assets/img/dest5.jpg" class="card-img-top" alt="dest1">
+                        <div class="card-body">
+                            <p class="fw-bold my-2">
+                                <span class="text-orange">$1299</span>
+                                Morocco 4-star Escorted Vaction w/Air,<span class="text-orange">Save $ 1600</span>
+                            </p>
+                            <p>
+                                This is the lowest price we've seen in four year for a Night
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card border-3 m-4 mx-sm-0">
+                        <img src="./assets/img/dest6.jpg" class="card-img-top" alt="dest1">
+                        <div class="card-body">
+                            <p class="fw-bold my-2">
+                                <span class="text-orange">$639</span>
+                                Cabo All-Inclusive Beach Getway w/Air <span class="text-orange">Save $250</span>
+                            </p>
+                            <p>
+                                This is the lowest price we've seen in four year for a Night
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card border-3 m-4 mx-sm-0">
+                        <img src="./assets/img/dest7.jpg" class="card-img-top" alt="dest1">
+                        <div class="card-body">
+                            <p class="fw-bold my-2">
+                                <span class="text-orange">$2299</span>
+                                New Nealand: Multi-city Trip w/Tours & Car Rental
+                            </p>
+                            <p>
+                                This is the lowest price we've seen in four year for a Night
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card border-3 m-4 mx-sm-0">
+                        <img src="./assets/img/dest8.jpg" class="card-img-top" alt="dest1">
+                        <div class="card-body">
+                            <p class="fw-bold my-2">
+                                <span class="text-orange">$1942</span>
+                                & up Turkey 8-Nt. Trip w/Air, Guided Tours & Hotels
+                            </p>
+                            <p>
+                                This is the lowest price we've seen in four year for a Night
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Destination Section End -->
 
 
 
 
 
-        <Script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></Script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="./assets/JS/script.js"></script>
-    </body>
+    <Script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></Script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/JS/script.js"></script>
+</body>
 
 </html>
