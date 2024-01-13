@@ -31,9 +31,11 @@
     background: #FA9005;
 }
 
+
 .text-danger2 {
     color: #D5385F !important;
 }
+
 
 .text-success2 {
     color: #10dd09;
@@ -103,8 +105,36 @@ p {
     background-size: cover;
 }
 /* /Newsletter Section End */
+/* Estimate Section Start */
+.esti{
+    width: 150px;
+}
+/* Estimate Section ENd */
+/* Footer Section Start */
+.iconImg { 
+    width: 15px; 
+    vertical-align: middle;
+}
+.fooContant li, .social li {
+    padding:0 10px 0 0;
+    display: inline-block;
+}
+.fooContant ul li{
+    
+  width:auto;
+  float:none;
 
-
+}
+.width{
+    width: 45px;
+    height: 45px;
+}
+.fooContant ul li:first-child {
+  display:inline-block ;
+  width:auto;
+  text-align:left;
+}
+/* Footer Section end */
 
 
 /* Media Query Section Start */
